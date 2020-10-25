@@ -86,7 +86,7 @@ public class LabClass
      */
     public void printList()
     {
-        System.out.println("Lab class " + timeAndDay);
+        System.out.println("co452Lab: " + timeAndDay);
         System.out.println("Instructor: " + instructor + "   Room: " + room);
         System.out.println("Class list:");
         
