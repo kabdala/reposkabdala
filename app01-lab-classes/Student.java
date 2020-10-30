@@ -17,6 +17,7 @@ public class Student
 
     private String id;
     
+    private Course course;
     // A BSc course has 120 credits, each module has 15 Credits
     private int credits;
 
@@ -81,11 +82,15 @@ public class Student
         return name.substring(0,4) + id.substring(0,3);
     }
     
+    public void enrollCourse(String codeNumber,String title)
+    {
+        course=new Course(codeNumber,title);
+    }
     /**
      * Print the student's name and ID number to the output terminal.
      */
     public void print()
     {
-        System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        System.out.println(name + ", student ID: " + id + ", credits: " + credits + ", Enrolled In:"+course.getCodeNumber()+" - "+course.getTitle());
     }
 }

@@ -1,0 +1,86 @@
+Course course1 = new Course("G400", "Computing");
+Course course2 = new Course();
+course2.getCodeNumber()
+    returned String ""
+Course course2 = new Course("B520", "Networking");
+Student student1 = new Student("ramis", "001");
+Student student2 = new Student("John", "002");
+Student student3 = new Student("wraic", "003");
+student3.addCredits(20);
+student3.changeName("remider");
+student3.enrollCourse("G100", "Computing");
+student3.getCredits()
+    returned int 20
+student3.getLoginName()
+    returned String "remi003"
+student3.getName()
+    returned String "remider"
+student3.getStudentID()
+    returned String "003"
+student3.print();
+remider, student ID: 003, credits: 20, Enrolled In:G100 - Computing
+student2.addCredits(35);
+student2.changeName("zerter");
+student2.enrollCourse("G100", "Computing");
+student2.getCredits()
+    returned int 35
+student2.getLoginName()
+    returned String "zert002"
+student2.getName()
+    returned String "zerter"
+student2.getName()
+    returned String "zerter"
+student2.getStudentID()
+    returned String "002"
+student2.print();
+zerter, student ID: 002, credits: 35, Enrolled In:G100 - Computing
+course2.getCodeNumber()
+    returned String "B520"
+student1.addCredits(40);
+student1.changeName("tereert");
+student1.enrollCourse("B520", "Networking");
+student1.getCredits()
+    returned int 40
+student1.getLoginName()
+    returned String "tere001"
+student1.getName()
+    returned String "tereert"
+student1.getName()
+    returned String "tereert"
+student1.getStudentID()
+    returned String "001"
+student1.print();
+tereert, student ID: 001, credits: 40, Enrolled In:B520 - Networking
+course2.getCodeNumber()
+    returned String "B520"
+course2.getTitle()
+    returned String "Networking"
+course1.getCodeNumber()
+    returned String "G400"
+course1.getTitle()
+    returned String "Computing"
+LabClass labClass1 = new LabClass(3);
+labClass1.enrollStudent(student1;);
+labClass1.enrollStudent(student2;);
+labClass1.enrollStudent(student3;);
+labClass1.numberOfStudents()
+    returned int 3
+labClass1.printList();
+co452Lab: unknown
+Instructor: unknown   Room: unknown
+Class list:
+tereert, student ID: 001, credits: 40, Enrolled In:B520 - Networking
+zerter, student ID: 002, credits: 35, Enrolled In:G100 - Computing
+remider, student ID: 003, credits: 20, Enrolled In:G100 - Computing
+Number of students: 3
+labClass1.setInstructor("Nicholas Day");
+labClass1.setRoom("G100");
+labClass1.setTime("Tuesday 29th September 2020");
+labClass1.printList();
+co452Lab: Tuesday 29th September 2020
+Instructor: Nicholas Day   Room: G100
+Class list:
+tereert, student ID: 001, credits: 40, Enrolled In:B520 - Networking
+zerter, student ID: 002, credits: 35, Enrolled In:G100 - Computing
+remider, student ID: 003, credits: 20, Enrolled In:G100 - Computing
+Number of students: 3

@@ -1,0 +1,64 @@
+LabClass co452Lab = new LabClass(3);
+Student student1 = new Student("amire", "001");
+Student student2 = new Student("James", "002");
+Student student3 = new Student("adem bill", "003");
+student1.addCredits(20);
+student1.changeName("amit");
+student1.getCredits()
+    returned int 20
+student1.getLoginName()
+    returned String "amit001"
+student1.getName()
+    returned String "amit"
+student1.getStudentID()
+    returned String "001"
+student1.print();
+amit, student ID: 001, credits: 20
+student2.addCredits(30);
+student2.changeName("Ramiz");
+student2.getCredits()
+    returned int 30
+student2.getLoginName()
+    returned String "Rami002"
+student2.getName()
+    returned String "Ramiz"
+student2.getStudentID()
+    returned String "002"
+student2.print();
+Ramiz, student ID: 002, credits: 30
+student3.addCredits(35);
+student3.changeName("adem bily");
+student3.getCredits()
+    returned int 35
+student3.getLoginName()
+    returned String "adem003"
+student3.getName()
+    returned String "adem bily"
+student3.getStudentID()
+    returned String "003"
+student3.print();
+adem bily, student ID: 003, credits: 35
+co452Lab.enrollStudent(student1;);
+co452Lab.enrollStudent(student2;);
+co452Lab.enrollStudent(student3;);
+co452Lab.numberOfStudents()
+    returned int 3
+co452Lab.printList();
+co452Lab: unknown
+Instructor: unknown   Room: unknown
+Class list:
+amit, student ID: 001, credits: 20
+Ramiz, student ID: 002, credits: 30
+adem bily, student ID: 003, credits: 35
+Number of students: 3
+co452Lab.setInstructor("Nicholas Day");
+co452Lab.setRoom("G100");
+co452Lab.setTime("Tuesday 29th September 2020 ");
+co452Lab.printList();
+co452Lab: Tuesday 29th September 2020 
+Instructor: Nicholas Day   Room: G100
+Class list:
+amit, student ID: 001, credits: 20
+Ramiz, student ID: 002, credits: 30
+adem bily, student ID: 003, credits: 35
+Number of students: 3
