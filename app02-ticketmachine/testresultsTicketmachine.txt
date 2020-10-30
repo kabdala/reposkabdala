@@ -1,0 +1,98 @@
+Ticket ticket1 = new Ticket("Aylesbury", 2.20);
+Ticket ticket2 = new Ticket("Amersham", 3.00);
+Ticket ticket3 = new Ticket("High Wycombe", 3.30);
+Coin coin1 = new Coin(.10);
+Coin coin2 = new Coin(20);
+Coin coin3 = new Coin(1.00);
+Coin coin4 = new Coin(2.00);
+Coin coin5 = new Coin(200);
+TicketMachine ticketMa1 = new TicketMachine(10);
+ticket1.PrintTicketInfo();
+Destination:Aylesbury ,Cost :2.2 pence
+ticket1.getCost()
+    returned double 2.2
+ticket1.getDestination()
+    returned String "Aylesbury"
+ticket1.print();
+
+Ticket for the :Aylesbury
+Ticket Cost :  2.2 pence 
+Date Purchased: Fri Oct 30 16:58:52 GMT 2020
+ticket2.PrintTicketInfo();
+Destination:Amersham ,Cost :3.0 pence
+ticket2.getCost()
+    returned double 3.0
+ticket2.getDestination()
+    returned String "Amersham"
+ticket2.print();
+
+Ticket for the :Amersham
+Ticket Cost :  3.0 pence 
+Date Purchased: Fri Oct 30 16:59:26 GMT 2020
+ticket3.PrintTicketInfo();
+Destination:High Wycombe ,Cost :3.3 pence
+ticket3.getCost()
+    returned double 3.3
+ticket3.getDestination()
+    returned String "High Wycombe"
+ticket3.print();
+
+Ticket for the :High Wycombe
+Ticket Cost :  3.3 pence 
+Date Purchased: Fri Oct 30 17:00:02 GMT 2020
+coin1.Print();
+Coin : 0.1
+coin1.addAmount(10);
+coin1.getAmount()
+    returned double 10.1
+coin1.setAmount(5);
+coin1.subtractAmount(4);
+coin1.Print();
+Coin : 1.0
+coin2.addAmount(25);
+coin2.getAmount()
+    returned double 45.0
+coin2.setAmount(12);
+coin2.subtractAmount(15);
+coin2.Print();
+Coin : -3.0
+coin3.addAmount(0);
+coin3.getAmount()
+    returned double 1.0
+coin3.setAmount(40);
+coin3.subtractAmount(20);
+coin3.Print();
+Coin : 20.0
+coin4.addAmount(800);
+coin4.getAmount()
+    returned double 802.0
+coin4.setAmount(400);
+coin4.subtractAmount(402);
+coin4.Print();
+Coin : -2.0
+coin5.addAmount(20);
+coin5.addAmount(30);
+coin5.setAmount(20);
+coin5.subtractAmount(10);
+coin5.Print();
+Coin : 10.0
+ticketMa1.buyTicket(50, 2);
+
+Ticket for the :High Wycombe
+Ticket Cost :  3.3 pence 
+Date Purchased: Fri Oct 30 17:03:17 GMT 2020
+ticketMa1.getBalance()
+    returned double -40.0
+ticketMa1.insertMoney(40);
+ticketMa1.refundBalance()
+    returned double 0.0
+ticketMa1.buyTicket(30, 1);
+
+Ticket for the :Amersham 
+Ticket Cost :  3.0 pence 
+Date Purchased: Fri Oct 30 17:03:17 GMT 2020
+ticketMa1.getBalance()
+    returned double -30.0
+ticketMa1.insertMoney(50);
+ticketMa1.refundBalance()
+    returned double 20.0
