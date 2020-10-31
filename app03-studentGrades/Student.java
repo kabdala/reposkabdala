@@ -19,7 +19,7 @@ public class Student
     private Course course;
     
     /**
-     * Create a new student with a given name and ID number.
+     * Create a new student with a given name of student and ID number.
      */
     public Student(String fullName, String studentID)
     {

@@ -24,7 +24,7 @@ public class Course
 
    
     /**
-     * Prints out the details of a course
+     * Prints out the details of a course with code number and title
      */
     public void print()
     {
