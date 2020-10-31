@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class Student
 {
-    // here the student name and student ID is defined in the form of attributes
+    // attributes for the student name and student ID is defined in the form of attributes
     private String nameofstudent;
 
     private String idofstudent;
