@@ -1,0 +1,127 @@
+Module module1 = new Module("computer", "C001");
+Module module2 = new Module("Programming", "P002");
+Module module3 = new Module("web development", "W003");
+Module module4 = new Module("Database", "D004");
+Course course1 = new Course("web", "001");
+Course course2 = new Course("software", "102");
+Student student1 = new Student("James", "1");
+Student student2 = new Student("Ramish", "2");
+Student student3 = new Student("Zaiger", "3");
+module1.changeMark(35);
+Marks for computer are: 35%
+module1.getMark()
+    returned int 35
+module1.getName()
+    returned String "computer"
+module1.getfinish()
+    returned boolean false
+module1.print();
+Following are module details:
+Module Name is = computer
+Module ID code is = C001
+And Marks are = 35%
+module1.printIfnotfinish();
+Your Module: computer is not finish.Your Marks are:35%
+module2.changeMark(30);
+Marks for Programming are: 30%
+module2.getMark()
+    returned int 30
+module2.getName()
+    returned String "Programming"
+module2.getfinish()
+    returned boolean false
+module2.print();
+Following are module details:
+Module Name is = Programming
+Module ID code is = P002
+And Marks are = 30%
+module2.printIfnotfinish();
+Your Module: Programming is not finish.Your Marks are:30%
+module3.changeMark(55);
+Marks for web development are: 55%
+module3.getMark()
+    returned int 55
+module3.getName()
+    returned String "web development"
+module3.getfinish()
+    returned boolean true
+module3.print();
+Following are module details:
+Module Name is = web development
+Module ID code is = W003
+And Marks are = 55%
+module3.printIfnotfinish();
+Your Module: web development has been finishd. And Marks are: 55%
+module4.changeMark(33);
+Marks for Database are: 33%
+module4.getMark()
+    returned int 33
+module4.getName()
+    returned String "Database"
+module4.getfinish()
+    returned boolean false
+module4.print();
+Following are module details:
+Module Name is = Database
+Module ID code is = D004
+And Marks are = 33%
+module4.printIfnotfinish();
+Your Module: Database is not finish.Your Marks are:33%
+course1.addmodule("Computer", "C001");
+course1.changeMark("Computer", 35);
+Marks for Computer are: 35%
+course1.print();
+A Course needs 4 moduals
+Current number of modules: 1
+course1.printModualDetails("Computer");
+Following are module details:
+Module Name is = Computer
+Module ID code is = C001
+And Marks are = 35%
+course1.setGrade();
+course2.addmodule("Programming", "P002");
+course2.changeMark("Programming", 20);
+Marks for Programming are: 20%
+course2.print();
+A Course needs 4 moduals
+Current number of modules: 1
+course2.printModualDetails("Programming");
+Following are module details:
+Module Name is = Programming
+Module ID code is = P002
+And Marks are = 20%
+student1.addCourse(course1;);
+student1.addCredits(15);
+student1.changeName("billy");
+student1.getCredits()
+    returned int 15
+student1.getsID()
+    returned String "1"
+student1.print();
+billy, sID: 1, credits: 15
+A Course needs 4 moduals
+Current number of modules: 1
+student2.addCourse(course2;);
+student2.addCredits(30);
+student2.changeName("john");
+student2.getcompleteName()
+    returned String "john"
+student2.getsID()
+    returned String "2"
+student2.print();
+john, sID: 2, credits: 30
+A Course needs 4 moduals
+Current number of modules: 1
+student3.addCourse(course2;);
+student3.addCredits(30);
+student3.changeName("jackson");
+student3.getCredits()
+    returned int 30
+student3.getcompleteName()
+    returned String "jackson"
+student3.getsID()
+    returned String "3"
+student3.print();
+jackson, sID: 3, credits: 30
+A Course needs 4 moduals
+Current number of modules: 1
