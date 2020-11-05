@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Khayre Abdala) 
+ * @version (5 November 2020)
  */
 public class StockManager
 {
@@ -37,7 +37,20 @@ public class StockManager
      */
     public void delivery(int id, int amount)
     {
+
+	Product product = findProduct (id);
+        if(product != null)
+        {
+            product.increaseQuantity(amount);
+            System.out.println("Congratulations product has been delivered : " + 	product);
+        }
+        else
+        {
+            System.out.println("The entered ID of the Product" + id + " Can't be located or matched!!!");
+        }
     }
+
+    
     
     /**
      * Try to find a product in the stock with the given id.
@@ -46,7 +59,18 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
-        return null;
+	
+	Product product = findProduct (id);
+        if(product != null)
+        {
+		System.out.println("Congratulations product has been found : " + 	product);
+		}
+
+	else
+        {
+            System.out.println("The entered ID of the Product" + id + " Can't be located or matched!!!");
+        }
+return 0 ;
     }
     
     /**
@@ -83,7 +107,7 @@ public class StockManager
     public void printAllProducts()
     {
         System.out.println();
-        System.out.println("Peacock's Stock List");
+        System.out.println("Stock list of Cars is");
         System.out.println("====================");
         System.out.println();
         
