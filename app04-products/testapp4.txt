@@ -1,0 +1,97 @@
+StockManager stock = new StockManager();
+StockDemo demo = new StockDemo(stock);
+stock.printAllProducts();
+210: Honda city stock level: 0
+211: Toyota Sidan stock level: 0
+212: Honda 2020 stock level: 0
+213: Honda civix stock level: 0
+214: Totota Prado stock level: 0
+215: Land Cruser stock level: 0
+216:  Honda Accord stock level: 0
+217:  Toyota Fit stock level: 0
+218:  Mercdeez benz stock level: 0
+119:  Honda Atlas stock level: 0
+demo.getProduct(201)
+Product with ID: 201 is not recognised.
+    returned Object null
+demo.getProduct(210)
+    returned Object <object reference>
+Product p1 = new Product(210, "Honda city");
+Product p2 = new Product(211, "Toyota Sidan");
+demo.getProduct(210)
+    returned Object <object reference>
+p1.getID()
+    returned int 210
+p1.getName()
+    returned String "Honda city"
+p1.getQuantity()
+    returned int 0
+p1.increaseQuantity(15);
+p1.sellOne();
+p1.toString()
+    returned String "210: Honda city stock level: 14"
+demo.runDemo();
+210: Honda city stock level: 0
+211: Toyota Sidan stock level: 0
+212: Honda 2020 stock level: 0
+213: Honda civix stock level: 0
+214: Totota Prado stock level: 0
+215: Land Cruser stock level: 0
+216:  Honda Accord stock level: 0
+217:  Toyota Fit stock level: 0
+218:  Mercdeez benz stock level: 0
+219:  Honda Atlas stock level: 0
+
+210: Honda city stock level: 0
+211: Toyota Sidan stock level: 0
+212: Honda 2020 stock level: 0
+213: Honda civix stock level: 0
+214: Totota Prado stock level: 0
+215: Land Cruser stock level: 0
+216:  Honda Accord stock level: 0
+217:  Toyota Fit stock level: 0
+218:  Mercdeez benz stock level: 0
+219:  Honda Atlas stock level: 0
+
+Congratulations product has been delivered : 210: Honda city stock level: 9
+Congratulations product has been delivered : 211: Toyota Sidan stock level: 12
+Congratulations product has been delivered : 212: Honda 2020 stock level: 6
+Congratulations product has been delivered : 213: Honda civix stock level: 8
+Congratulations product has been delivered : 214: Totota Prado stock level: 11
+Congratulations product has been delivered : 215: Land Cruser stock level: 7
+Congratulations product has been delivered : 216:  Honda Accord stock level: 2
+Congratulations product has been delivered : 217:  Toyota Fit stock level: 9
+Congratulations product has been delivered : 218:  Mercdeez benz stock level: 12
+Congratulations product has been delivered : 219:  Honda Atlas stock level: 8
+The entered ID of the Product219 Can't be located or matched!!!
+210: Honda city stock level: 9
+211: Toyota Sidan stock level: 12
+212: Honda 2020 stock level: 6
+213: Honda civix stock level: 8
+214: Totota Prado stock level: 11
+215: Land Cruser stock level: 7
+216:  Honda Accord stock level: 2
+217:  Toyota Fit stock level: 9
+218:  Mercdeez benz stock level: 12
+219:  Honda Atlas stock level: 8
+
+stock.deliverProduct(211, 5);
+Congratulations product has been delivered : 211: Toyota Sidan stock level: 17
+
+stock.printAllProducts();
+210: Honda city stock level: 9
+211: Toyota Sidan stock level: 17
+212: Honda 2020 stock level: 6
+213: Honda civix stock level: 8
+214: Totota Prado stock level: 11
+215: Land Cruser stock level: 7
+216:  Honda Accord stock level: 2
+217:  Toyota Fit stock level: 9
+218:  Mercdeez benz stock level: 12
+119:  Honda Atlas stock level: 0
+
+stock.printDetails(210);
+210: Honda city stock level: 9
+stock.sellProduct(210);
+210: Honda city stock level: 9
+210: Honda city stock level: 8
