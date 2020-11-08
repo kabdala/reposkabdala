@@ -28,7 +28,7 @@ public class StockDemo
         manager.addProduct(new Product(216,  " Honda Accord"));
         manager.addProduct(new Product(217,  " Toyota Fit"));
         manager.addProduct(new Product(218,  " Mercdeez benz"));
-        manager.addProduct(new Product(119,  " Honda Atlas"));
+        manager.addProduct(new Product(219,  " Honda Atlas"));
 	  
     }
 public void runDemo()
