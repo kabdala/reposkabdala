@@ -1,0 +1,47 @@
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> lowstock
+
+ Please enter minimum stock level:
+> 3
+***************************
+Stock List of Khayre Abdala
+Low Stock (under 3)
+****************************
+210: Honda City 2019 stock level:0
+211: Honda Civic 2020 stock level:0
+212: Nissan 2018 stock level:0
+213: Toyota BeltaX 2016 stock level:0
+214: Toyota BeltaX1 2018 stock level:0
+215: Toyota YarisW 2020 stock level:0
+216: Toyota YarisSpecial 2019 stock level:0
+217: Toyota Acord 2017 stock level:0
+218: Kia classic 2017 stock level:0
+219: Nissan brv 2010 stock level:0
+220: Toyota GLI 2020 stock level: 0
+221: Toyota XLI 2019 stock level: 0
+223: Toyota Belta 2020 stock level: 0
+224: Toyota Yaris 2019 stock level: 0
+225: Tesla WT 2018 stock level: 0
+226: Tesla WTR 2019 stock level: 0
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> 

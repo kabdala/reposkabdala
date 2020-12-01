@@ -1,0 +1,46 @@
+ ***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> restock
+
+ Please enter minimum stock level:
+> 15
+
+ Please enter Quantity:
+> 12
+12 Honda City 2019 delivered
+12 Honda Civic 2020 delivered
+12 Nissan 2018 delivered
+12 Toyota BeltaX 2016 delivered
+12 Toyota BeltaX1 2018 delivered
+12 Toyota YarisW 2020 delivered
+12 Toyota YarisSpecial 2019 delivered
+12 Toyota Acord 2017 delivered
+12 Kia classic 2017 delivered
+12 Nissan brv 2010 delivered
+12 Toyota GLI 2020 delivered
+12 Toyota XLI 2019 delivered
+12 Toyota Belta 2020 delivered
+12 Toyota Yaris 2019 delivered
+12 Tesla WT 2018 delivered
+12 Tesla WTR 2019 delivered
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> 

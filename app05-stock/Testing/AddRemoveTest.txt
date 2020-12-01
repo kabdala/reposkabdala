@@ -1,0 +1,190 @@
+Program.main();
+**************************************************************
+ App05 for Management of Stock *==* developed by Khayre Abdala 
+**************************************************************
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> add
+
+ Please enter Product Details:
+
+ Product Name:
+> Toyota GLI 2020
+
+ Product ID:
+> 220
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> add
+
+ Please enter Product Details:
+
+ Product Name:
+> Toyota XLI 2019
+
+ Product ID:
+> 221
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> add
+
+ Please enter Product Details:
+
+ Product Name:
+> Toyota Belta 2018
+
+ Product ID:
+> 222
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> add
+
+ Please enter Product Details:
+
+ Product Name:
+> Toyota Belta 2020
+
+ Product ID:
+> 223
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> add
+
+ Please enter Product Details:
+
+ Product Name:
+> Toyota Yaris 2019
+
+ Product ID:
+> 224
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> add
+
+ Please enter Product Details:
+
+ Product Name:
+> Tesla WT 2018
+
+ Product ID:
+> 225
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> add
+
+ Please enter Product Details:
+
+ Product Name:
+> Tesla WTR 2019
+
+ Product ID:
+> 226
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> Remove
+
+ Please enter product ID:
+> 289
+********************
+No item with ID: 289 exsists
+********************
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> remove
+
+ Please enter product ID:
+> 222
+Product ID: 222 removed from stock list
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> 

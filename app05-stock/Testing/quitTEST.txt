@@ -1,0 +1,12 @@
+***********************************************************************
+    Add:         For adding a new product
+    Remove:      For removing old product
+    LowStock:    For listing down the low stock
+    Search:      For Searching out a producuct
+    Restock:     For chaning the stock level
+    Delivery:    For chaning or increasing the prodcut stock level
+    Sell:        For selling out the product from stock
+    PrintAll:    For printing all products
+    Quit:        For stoping or to quite the programe
+
+> quit
