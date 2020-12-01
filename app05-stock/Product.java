@@ -2,7 +2,7 @@
  * Model some details of a product sold by a company.
  * 
  * @author Khayre Abdala
- * @version 1.2
+ * @version 1.2.1
  */
 public class Product
 {
