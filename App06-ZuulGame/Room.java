@@ -1,6 +1,5 @@
 import java.util.Set;
 import java.util.HashMap;
-import java.util.Iterator;
 
 /**
  * Class Room - a room in an adventure game.
@@ -12,14 +11,15 @@ import java.util.Iterator;
  * connected to other rooms via exits.  For each existing exit, the room 
  * stores a reference to the neighboring room.
  * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author  Khayre Abdala
+ * @version 12-12-2020
  */
 
-public class Room 
-{
+public class Room {
     private String description;
-    private HashMap<String, Room> exits;        // stores exits of this room.
+    private Key key;
+    private HashMap<String, Room> exits; // stores exits of this room.
+    private HashMap<String, String> exitInfo; // stores properties of the exits
 
     /**
      * Create a room described "description". Initially, it has
@@ -27,10 +27,27 @@ public class Room
      * "an open court yard".
      * @param description The room's description.
      */
-    public Room(String description) 
-    {
+    public Room(String description) {
+        initRoom(description, null);
+    }
+    
+    /**
+     * Create a room, but clarify whether or not it has a key.
+     * @param description The room's description.
+     * @param hasKey Whether or not the room contains a key.
+     */
+    public Room(String description, Key key) {
+        initRoom(description, key);
+    }
+    
+    /**
+     * Actual room initialization.
+     */
+    private void initRoom(String description, Key key) {
         this.description = description;
-        exits = new HashMap<>();
+        this.key = key;
+        exits = new HashMap<String, Room>();
+        exitInfo = new HashMap<String, String>();
     }
 
     /**
@@ -38,17 +55,37 @@ public class Room
      * @param direction The direction of the exit.
      * @param neighbor  The room to which the exit leads.
      */
-    public void setExit(String direction, Room neighbor) 
-    {
+    public void setExit(String direction, Room neighbor) {
+        setExit(direction, neighbor, "ok");
+    }
+    
+    /**
+     * Define a locked exit.
+     * @param direction The direction of the exit.
+     * @param neighbor  The room to which the exit leads.
+     * @param key       The key needed to open the door.
+     */
+    public void setExit(String direction, Room neighbor, Key key) {
+        exitInfo.put(direction + "Key", key.toString());
+        setExit(direction, neighbor, "locked");
+    }
+    
+    /**
+     * Define a special exit from this room (one-way, locked, etc).
+     * @param direction The direction of the exit.
+     * @param neighbor  The room to which the exit leads.
+     * @param state     The state of the exit (default "ok" - i.e. locked, trapped, ok)
+     */
+    public void setExit(String direction, Room neighbor, String state) {
         exits.put(direction, neighbor);
+        exitInfo.put(direction + "State", state);
     }
 
     /**
      * @return The short description of the room
      * (the one that was defined in the constructor).
      */
-    public String getShortDescription()
-    {
+    public String getShortDescription() {
         return description;
     }
 
@@ -58,23 +95,33 @@ public class Room
      *     Exits: north west
      * @return A long description of this room
      */
-    public String getLongDescription()
-    {
+    public String getLongDescription() {
         return "You are " + description + ".\n" + getExitString();
     }
 
+    /**
+     * Gets the state of a specific exit
+     */
+    public String getState(String direction) {
+        return exitInfo.get(direction + "State");
+    }
+    
+    /**
+     * Sets the exit state.
+     */
+    public void setState(String direction, String state) {
+        exitInfo.put(direction + "State", state);
+    }
+    
     /**
      * Return a string describing the room's exits, for example
      * "Exits: north west".
      * @return Details of the room's exits.
      */
-    private String getExitString()
-    {
+    private String getExitString() {
         String returnString = "Exits:";
         Set<String> keys = exits.keySet();
-        
-        for(String exit : keys) 
-        {
+        for(String exit : keys) {
             returnString += " " + exit;
         }
         return returnString;
@@ -86,9 +133,39 @@ public class Room
      * @param direction The exit's direction.
      * @return The room in the given direction.
      */
-    public Room getExit(String direction) 
-    {
+    public Room getExit(String direction) {
         return exits.get(direction);
+    }
+    
+    /**
+     * Get the room key lock identifier.
+     */
+    public String getExitKey(String direction) {
+        return exitInfo.get(direction + "Key");
+    }
+    
+    /**
+     * Checks if the room has the key.
+     */
+    public boolean hasKey() {
+        if (this.key == null) {
+            return false;
+        }
+        return true;
+    }
+    
+    /**
+     * Get the room key.
+     */
+    public Key getKey() {
+        return key;
+    }
+    
+    /**
+     * Get the key identifer.
+     */
+    public String getKeyInfo() {
+        return key.toString();
     }
 }
 

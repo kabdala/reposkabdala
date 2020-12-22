@@ -3,22 +3,21 @@
  * "World of Zuul" is a very simple, text based adventure game.  
  *
  * This class holds information about a command that was issued by the user.
- * A command currently consists of two parts: a CommandWord and a string
- * (for example, if the command was "take map", then the two parts
- * are TAKE and "map").
+ * A command currently consists of two strings: a command word and a second
+ * word (for example, if the command was "take map", then the two strings
+ * obviously are "take" and "map").
  * 
  * The way this is used is: Commands are already checked for being valid
  * command words. If the user entered an invalid command (a word that is not
- * known) then the CommandWord is UNKNOWN.
+ * known) then the command word is <null>.
  *
  * If the command had only one word, then the second word is <null>.
  * 
- * @author  Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author  Khayre Abdala
+ * @version 12-12-2020
  */
 
-public class Command
-{
+public class Command {
     private CommandWord commandWord;
     private String secondWord;
 
@@ -29,8 +28,7 @@ public class Command
      *                  was not recognised.
      * @param secondWord The second word of the command. May be null.
      */
-    public Command(CommandWord commandWord, String secondWord)
-    {
+    public Command(CommandWord commandWord, String secondWord) {
         this.commandWord = commandWord;
         this.secondWord = secondWord;
     }
@@ -39,8 +37,7 @@ public class Command
      * Return the command word (the first word) of this command.
      * @return The command word.
      */
-    public CommandWord getCommandWord()
-    {
+    public CommandWord getCommandWord() {
         return commandWord;
     }
 
@@ -48,24 +45,21 @@ public class Command
      * @return The second word of this command. Returns null if there was no
      * second word.
      */
-    public String getSecondWord()
-    {
+    public String getSecondWord() {
         return secondWord;
     }
 
     /**
      * @return true if this command was not understood.
      */
-    public boolean isUnknown()
-    {
-        return (commandWord == CommandWord.UNKNOWN);
+    public boolean isUnknown() {
+        return (commandWord == null);
     }
 
     /**
      * @return true if the command has a second word.
      */
-    public boolean hasSecondWord()
-    {
+    public boolean hasSecondWord() {
         return (secondWord != null);
     }
 }
